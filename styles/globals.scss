@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// css restore
+:root{
+  --color-bg:0#1f1f38;
+  --color-bg-variant:  D#22c6c;
+  --colorf-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white:#fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+}
+
+
+* {
+  font-family: "Lato", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  user-select: none;
+  background-color: #1f1f38;
+  color: #fff;
+}
+// scroll bar color change
+::-webkit-scrollbar {
+  height: 4px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: silver;
+}
+
+// **************************** components
+
+//************header**********
+
+// **************************** overrides
