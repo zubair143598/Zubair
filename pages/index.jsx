@@ -1,11 +1,11 @@
-import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
-import Portfolio from "@/components/Portfolio";
+import MyWork from "@/components/MyWork";
 import Services from "@/components/Services";
+import Skills from "@/components/Skills";
 import Testimonial from "@/components/Testimonial";
 import Head from "next/head";
 
@@ -21,10 +21,10 @@ export default function Home() {
       <main>
         <Header/>
         <Nav/>
-        <About/>
+        <Skills/>
         <Experience/>
         <Services/>
-        <Portfolio/>
+        <MyWork/>
         <Testimonial/>
         <Contact/>
         <Footer/>

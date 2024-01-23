@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  user-select: none;
+  // user-select: none;
   background-color: #1f1f38;
   color: #fff;
 }
@@ -41,6 +41,29 @@ body {
 
 // **************************** components
 
-//************header**********
+//************Navbar**********
+#Nav{
+  a.active{
+  background-color: #1f1f38; 
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #4db5ff;
+
+  }
+  .home{
+    display: none;
+  }
+  .nav-icon:hover .home{
+      display: block;
+      color: white;
+  }
+}
+
+.slick-arrow 
+{
+  display: none !important;
+}
+
 
 // **************************** overrides
