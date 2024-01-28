@@ -35,7 +35,7 @@ const Skills = () => {
     ],
   };
   return (
-    <div id="Skills" className=" mt-[6rem]  text-center items-center">
+    <div id="Skills" className=" my-[6rem]  text-center items-center">
       <div>
         <p className="text-[30px] tracking-[10px] uppercase text-[#4db5ff]">
           Skills
