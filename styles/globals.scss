@@ -66,4 +66,9 @@ body {
 }
 
 
+input:-internal-autofill-selected 
+  {
+  background-color: orange !important;
+}
+
 // **************************** overrides
