@@ -1,14 +1,15 @@
 import { useFormik, validateYupSchema } from "formik";
 import React from "react";
+import { db, app } from "./Firebase";
+import { collection, addDoc } from "firebase/firestore";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { signUpSchema } from "./schema/FormValidation";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
-
-const notify=()=> toast("Message delivered successfully")
+const notify = () => toast("Message delivered successfully");
 const initialValues = {
   name: "",
   email: "",
@@ -16,21 +17,25 @@ const initialValues = {
 };
 
 const Contact = () => {
-  const {values, errors,touched ,handleBlur, handleChange, handleSubmit} = useFormik({
-    initialValues: initialValues,
-    validationSchema:signUpSchema,
-    onSubmit: (values, action) => {
-      console.log(values);
-      action.resetForm()
-    },
-    
-  });
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues: initialValues,
+      validationSchema: signUpSchema,
 
-  
+      onSubmit: async (values, action) => {
+        try {
+          const docRef = await addDoc(collection(db, "contacts"), values);
+          action.resetForm();
+          notify();
+        } catch (error) {
+          notify.error("Error adding document: ",error);
+        }
+      },
+    });
 
   return (
     <div id="Contact" className=" flex justify-center my-[6rem] ">
-      <ToastContainer/>
+      <ToastContainer />
       <div className="lg:w-[30%]">
         <div>
           <h1 className=" text-[30px] text-center  text-[#4db5ff]">
@@ -66,7 +71,9 @@ const Contact = () => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          { errors.name && touched.name ? <p className=" text-red-500">{errors.name}</p>: null}
+          {errors.name && touched.name ? (
+            <p className=" text-red-500">{errors.name}</p>
+          ) : null}
           <input
             autoComplete="off"
             type="email"
@@ -78,7 +85,9 @@ const Contact = () => {
             onChange={handleChange}
             onBlur={handleBlur}
           />
-          { errors.email && touched.email ? <p className=" text-red-500">{errors.email}</p>: null}
+          {errors.email && touched.email ? (
+            <p className=" text-red-500">{errors.email}</p>
+          ) : null}
           <textarea
             autoComplete="off"
             type="message"
@@ -89,11 +98,12 @@ const Contact = () => {
             value={values.message}
             onChange={handleChange}
             onBlur={handleBlur}
-            
           />
-          { errors.message && touched.message ? <p className=" text-red-500">{errors.message}</p>: null}
+          {errors.message && touched.message ? (
+            <p className=" text-red-500">{errors.message}</p>
+          ) : null}
           <br />
-          <button onClick={notify}
+          <button
             className=" w-[90%] bg-blue-500 py-3 text-[18px] mt-4 rounded"
             type="submit"
           >

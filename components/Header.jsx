@@ -23,7 +23,8 @@ function Header() {
           </a>
           <a
             className=" rounded bg-blue-400 hover:bg-red-600  mx-3 px-9 py-[9px] "
-            href="https://wa.me/+923365353430" target="blank"
+            href="https://wa.me/+923365353430"
+            target="blank"
             download
           >
             Let&#x27;s Talk
@@ -70,10 +71,12 @@ function Header() {
               </div>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              necessitatibus, quos repellat praesentium facere iure beatae autem
-              illum? Expedita dolorem rem dolore quibusdam quis id fugiat
-              delectus suscipit deserunt rerum.
+              <p>
+                One year experience in React.js and Next.js, proficient in
+                developing responsive user interfaces, utilizing state
+                management, and optimizing performance for seamless web
+                applications.
+              </p>
             </div>
           </div>
         </div>

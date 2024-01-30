@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="  py-[3rem] bg-black">
-      <div className=" flex justify-around items-center ">
+      <div className=" flex flex-col lg:flex-row justify-around items-center ">
         <div>
           <h3 className=" text-[30px] text-[#4db5ff]">Muhammad Zubair</h3>
           <p className="text-[18px] mt-2 text-gray-400">
@@ -36,11 +36,14 @@ const Footer = () => {
         </div>
         <div>
           <a
-            className="border border-[#4db5ff] text-[#4db5ff] rounded bg-transparent hover:bg-white hover:text-[black] mx-3 px-4 py-2 "
+            className=" "
             href="/assets/Zubair_React_CV.pdf"
             download
           >
+            <button className=" border border-[#4db5ff] text-[#4db5ff] rounded bg-transparent hover:bg-white hover:text-[black] mx-3 px-4 py-2">
+
             Download CV
+            </button>
           </a>
         </div>
       </div>
