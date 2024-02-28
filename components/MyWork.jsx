@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
 
 const MyWork = () => {
@@ -9,11 +10,16 @@ const MyWork = () => {
       <h1 className=" text-[30px] text-[#4db5ff] text-center">My Work</h1>
       <div className="xl:mx-[10rem] gap-x-5 lg:gap-y-0 gap-y-5 lg:mx-[6rem] mx-[1rem] grid md:grid-cols-2 lg:grid-cols-3">
         <div>
-          <img
-            src="./assets/palkadot.png"
-            className=" rounded-lg"
-            alt="palkadot"
-          />
+          <a href="https://polkadotzubair.netlify.app/" target="blank">
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              src="./assets/palkadot.png"
+              className=" rounded-lg"
+              alt="palkadot"
+            />
+          </a>
           <h3 className="text-[30px] mt-7 text-[#4db5ff]">Polkadot</h3>
           <p className=" text-gray-300 text-[18px]">Polkadot landing page</p>
           <div className="flex">
@@ -32,21 +38,35 @@ const MyWork = () => {
             <li>Animation</li>
           </ul>
           <div className="flex">
-            <a
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               href="https://polkadotzubair.netlify.app/"
               target="blank"
               className=" border-[#2f82bd] hover:text-black hover:bg-white border text-[#4db5ff] text-[18px] px-8 mt-3 py-2 flex rounded-lg"
             >
               Visit <FiExternalLink className="ms-3 mt-1 " />
-            </a>
+            </motion.a>
           </div>
         </div>
         <div>
-          <img
-            src="./assets/ShoppingCart.png"
-            className=" rounded-lg"
-            alt="ShoppingCart"
-          />
+          <motion.a
+            href="https://task5-next-cart.vercel.app/"
+            target="blank"
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+          >
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              src="./assets/ShoppingCart.png"
+              className=" rounded-lg"
+              alt="ShoppingCart"
+            />
+          </motion.a>
           <h3 className="text-[30px] mt-7 text-[#4db5ff]">Shopping Cart</h3>
           <p className=" text-gray-300 text-[18px]">
             Product display add to cart functionality{" "}
@@ -72,21 +92,35 @@ const MyWork = () => {
             <li>Saving cart data in local storage</li>
           </ul>
           <div className="flex">
-            <a
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               href="https://task5-next-cart.vercel.app/"
               target="blank"
               className=" border-[#2f82bd] hover:text-black hover:bg-white border text-[#4db5ff] text-[18px] px-8 mt-3 py-2 flex rounded-lg"
             >
               Visit <FiExternalLink className="ms-3 mt-1 " />
-            </a>
+            </motion.a>
           </div>
         </div>
         <div>
-          <img
-            src="./assets/ZimoTeam.png"
-            className=" rounded-lg"
-            alt="ZimoTeam"
-          />
+          <motion.a
+            href="https://task3-zimo-team.vercel.app/"
+            target="blank"
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+          >
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+              src="./assets/ZimoTeam.png"
+              className=" rounded-lg"
+              alt="ZimoTeam"
+            />
+          </motion.a>
           <h3 className="text-[30px] mt-7 text-[#4db5ff]">ZIMO Team</h3>
           <p className=" text-gray-300 text-[18px]">ZIMO team landing page</p>
           <div className="flex">
@@ -105,20 +139,23 @@ const MyWork = () => {
             <li>Display Time and Flag of Current Country </li>
           </ul>
           <div className="flex">
-            <a
+            <motion.a
+              whileHover={{ scale: 1.2 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               href="https://task3-zimo-team.vercel.app/"
               target="blank"
               className=" border-[#2f82bd] hover:text-black hover:bg-white border text-[#4db5ff] text-[18px] px-8 mt-3 py-2 flex rounded-lg"
             >
               Visit <FiExternalLink className="ms-3 mt-1 " />
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>
       <div className=" flex justify-center">
         <Link
           href="AllProject"
-          className="bg-blue-400 hover:bg-red-600 mt-6  text-[18px] px-14 lg:mt-3 py-3 flex rounded-lg"
+          className="bg-blue-400 hover:bg-red-600 mt-6 text-black hover:text-white  text-[20px] px-[6rem] lg:mt-3 py-4 flex rounded-lg"
         >
           All Project
         </Link>

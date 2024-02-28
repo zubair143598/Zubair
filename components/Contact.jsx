@@ -59,7 +59,7 @@ const Contact = () => {
             <FaWhatsapp size={25} className="text-[#4db5ff] rounded" />
           </a>
         </div>
-        <form onSubmit={handleSubmit} className=" ms-4 lg:ms-0" action="">
+        <form onSubmit={handleSubmit} method=" Get" className=" ms-4 lg:ms-0" action="">
           <input
             autoComplete="off"
             type="name"
