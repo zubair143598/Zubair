@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { signUpSchema } from "./schema/FormValidation";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 const notify = () => toast("Message delivered successfully");
 const initialValues = {
@@ -43,21 +44,21 @@ const Contact = () => {
           </h1>
         </div>
         <div className=" flex justify-around mt-4">
-          <a
+          <Link
             target="blank"
             href="https://www.linkedin.com/in/muhammad-zubair-b089b6246/"
           >
             <AiFillLinkedin size={25} className="text-[#4db5ff] rounded" />
-          </a>
-          <a
+          </Link>
+          <Link
             target="blank"
             href="https://github.com/zubair143598?tab=repositories"
           >
             <AiFillGithub size={25} className="text-[#4db5ff] rounded" />
-          </a>
-          <a target="_blank" href="https://wa.me/+923365353430">
+          </Link>
+          <Link target="_blank" href="https://wa.me/+923365353430">
             <FaWhatsapp size={25} className="text-[#4db5ff] rounded" />
-          </a>
+          </Link>
         </div>
         <form onSubmit={handleSubmit} method=" Get" className=" ms-4 lg:ms-0" action="">
           <input
@@ -65,7 +66,7 @@ const Contact = () => {
             type="name"
             name="name"
             id="name"
-            className=" bg-transparent border rounded-lg border-[#4db5ff] w-[90%] ps-3 placeholder:text-gray-400 py-2 mt-4 placeholder:tracking-[3px]"
+            className="bg-transparent border rounded-lg border-[#4db5ff] w-[90%] ps-3 placeholder:text-gray-400 py-2 mt-4 placeholder:tracking-[3px]"
             placeholder="Name"
             value={values.name}
             onChange={handleChange}
@@ -104,7 +105,7 @@ const Contact = () => {
           ) : null}
           <br />
           <button
-            className=" w-[90%] bg-blue-500 py-3 text-[18px] mt-4 rounded"
+            className=" w-[90%] bg-blue-500 hover:bg-red-600 hover:text-black py-3 text-[18px] mt-4 rounded"
             type="submit"
           >
             Send

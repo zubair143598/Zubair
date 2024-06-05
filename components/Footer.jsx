@@ -37,7 +37,7 @@ const Footer = () => {
         <div>
           <a
             className=" "
-            href="/assets/Zubair_React_CV.pdf"
+            href="/assets/Zubair_React_Resume.pdf"
             download
           >
             <button className=" border border-[#4db5ff] text-[#4db5ff] rounded bg-transparent hover:bg-white hover:text-[black] mx-3 px-4 py-2">
