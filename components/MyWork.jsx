@@ -38,8 +38,9 @@ const MyWork = () => {
       subDec: ["Single Page animated Website"],
     },
     {
-      link: "https://viva-tech.vercel.app/",
-      img: "./assets/vivaTech.png",
+      link: "https://funsole.vercel.app/",
+      img: "./assets/funsole.png",
+      alt:'funsole',
       webTitle: "Viva Tech Solution",
       Description: " Full Stack webSite for viva Tech",
       libraries: [

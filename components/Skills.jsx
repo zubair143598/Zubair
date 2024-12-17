@@ -143,12 +143,13 @@ const Skills = () => {
       </div>
       <div className=" mt-[6rem] flex justify-center">
         <div className="xl:w-[50%] lg:w-[80%]  w-[90%] gap-y-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-[18px] text-start text-[#4db5ff]">
-          <h4>HTLM</h4>
+          <h4>HTML</h4>
           <h4>CSS</h4>
-          <h4>SCSS</h4>
           <h4>JAVASCRIPT</h4>
           <h4>REACT.JS</h4>
           <h4>NEXT.JS</h4>
+          <h4>TAILWIND CSS</h4>
+          <h4>SCSS</h4>
           <h4>REDUX-TOOLKIT</h4>
           <h4>FIREBASE</h4>
           <h4>NPM</h4>
@@ -156,7 +157,6 @@ const Skills = () => {
           <h4>GITHUB</h4>
           <h4>VISUAL STUDIO CODE</h4>
           <h4>FIGMA</h4>
-          <h4>CANVA</h4>
           <h4>BOOTSTRAP</h4>
           <h4>CHAKRA UI</h4>
 

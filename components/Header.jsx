@@ -62,6 +62,7 @@ function Header() {
         <div className="mt-4">
           <Link
             className="border border-[#4db5ff] text-[#4db5ff] rounded bg-transparent hover:bg-white hover:text-[black] mx-3 px-4 py-2 "
+            target="blank"
             href="/assets/Zubair_React_Resume.pdf"
             download
           >
@@ -78,10 +79,7 @@ function Header() {
         </div>
         <div className="grid grid-cols-1 items-center lg:grid-cols-3 ">
           <div className="flex lg:flex-col mt-5 lg:justify-start justify-center gap-[1rem]">
-            <Link
-              target="blank"
-              href="https://www.linkedin.com/in/muhammad-zubair-b089b6246/"
-            >
+            <Link target="blank" href="www.linkedin.com/in/muhammad-zubair143">
               <AiFillLinkedin size={25} className="text-[#4db5ff] rounded" />
             </Link>
             <Link
@@ -96,7 +94,7 @@ function Header() {
             {/* <a href=""><AiFillLinkedin size={25} className="text-[#4db5ff] rounded" /></a> */}
             <p className="lg:h-[3rem] lg:w-[1px] h-[1px] w-[3rem] mt-3 bg-[#4db5ff] lg:ms-3"></p>
           </div>
-          <div className=" flex justify-center    ">
+          <div className=" flex justify-center  mt-4  ">
             <motion.img
               whileHover={{ scale: 1.1 }}
               onHoverStart={(e) => {}}
@@ -126,7 +124,7 @@ function Header() {
               >
                 <FaAward className="text-[#4db5ff]" size={25} />
                 <p className="text-[20px]">Experience</p>
-                <p className="text-silver text-[12px]">1 Year Working</p>
+                <p className="text-silver text-[12px]">2 Year Working</p>
               </motion.div>
               <motion.div
                 ref={ref}
@@ -149,9 +147,9 @@ function Header() {
                 <p className="text-silver text-[12px]">15+ completed</p>
               </motion.div>
             </div>
-            <div>
-              <p>
-                Frontend developer with over a year of dedicated experience
+            <div >
+              <p className="mt-4">
+                Frontend developer with 2 years of dedicated experience
                 proficient in React.js and Next.js, with a keen eye for crafting
                 dynamic and user-focused web applications. Skilled in
                 JavaScript, Tailwind CSS, Bootstrap, and Redux, I excel at
