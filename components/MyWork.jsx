@@ -41,8 +41,8 @@ const MyWork = () => {
       link: "https://funsole.vercel.app/",
       img: "./assets/funsole.png",
       alt:'funsole',
-      webTitle: "Viva Tech Solution",
-      Description: " Full Stack webSite for viva Tech",
+      webTitle: "FunSole",
+      Description: " Full Stack webSite clone of FunSole",
       libraries: [
         "Next.js",
         "Tailwind CSS",
